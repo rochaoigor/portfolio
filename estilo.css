@@ -89,7 +89,7 @@ section p {
     padding-left:20px;
     padding-right:40px;
     text-align:justify;
-    text-shadow:4px 5px rgba(0, 0, 0, 0.652);
+    text-shadow:4px 2px rgba(0, 0, 0, 0.652);
     font-family:var(--fonte02);
     color:white;
     margin-right:40px;
