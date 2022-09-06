@@ -128,9 +128,7 @@ aside h2,h3 {
     text-shadow:3px 2px rgba(0, 0, 0, 0.652);
 }
 
-aside h3 {
-    text-align:center;
-}
+
 ul {
     list-style-type:none;
     flex: grid;
