@@ -96,7 +96,20 @@ section p {
     margin-left:40px;
     border-radius:4px 6px;
 }
+p > a {
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
 
+P > a:hover {
+    font-weight:bold;
+    color:rgba(0, 255, 255, 0.574);
+    background-color:rgba(245, 245, 245, 0.381);
+    border-radius:8px;
+    padding:10px;
+
+}
 section strong {
     color:cyan;
 }
