@@ -104,7 +104,7 @@ section {
 
 section.main-content h2 {
     font-weight: normal;
-    padding-top: 100px;
+    padding-top: 90px;
     text-align: center;
     text-shadow: 3px 2px black;
     font-size: 2.5em;
@@ -112,6 +112,10 @@ section.main-content h2 {
     font-variant: small-caps;
     color: white;
 
+}
+
+#titulo-socialmedia{
+    padding:20px;
 }
 
 section.main-content p {
@@ -212,6 +216,7 @@ div.socialmedia-content {
 
 
 }
+
 
 div.socialmedia-content img {
     border-radius: 20px;
