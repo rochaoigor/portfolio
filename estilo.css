@@ -17,6 +17,10 @@
         
         
     }
+    section#contato {
+        height:50vh;
+        min-width:150px;
+    }
 span#menu {
     display:block;
 }
