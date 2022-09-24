@@ -5,12 +5,7 @@
 }
 
 @media screen and (max-width:768px) {
-   
-  #home {
-    font-size: 3rem;
-  } 
-  
-   
+
     .socialmedia-content img {
         display:grid;
         grid-template-columns: 0.5fr;
