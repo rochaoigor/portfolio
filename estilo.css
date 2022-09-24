@@ -5,8 +5,11 @@
 }
 
 @media screen and (max-width:768px) {
-   .main-content {
-    font-size:4rem;
+   
+   
+    .main-content {
+    font-size:5rem;
+
    }
    
     .socialmedia-content img {
@@ -18,7 +21,7 @@
         
     }
     section#contato {
-        min-height:100%;
+        min-height:40vw;
         min-width:150px;
     }
 span#menu {
