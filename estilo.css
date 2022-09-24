@@ -6,11 +6,10 @@
 
 @media screen and (max-width:768px) {
    
-   
-    .main-content {
-    font-size:5rem;
-
-   }
+  #home {
+    font-size: 3rem;
+  } 
+  
    
     .socialmedia-content img {
         display:grid;
