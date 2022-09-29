@@ -7,13 +7,13 @@ let minutos = data.getMinutes()
 let res = document.querySelector('#hello')
 if (hora >=0 && hora <12 ) 
 {
-res.innerHTML = `Bom dia, ${nome}! <Br>São ${hora}horas e ${minutos}minutos`}
+res.innerHTML = `Bom dia, ${nome}! <Br>Seja Bem-vindo(a)`}
 else if (hora >= 12 && hora <19){
-    res.innerHTML =`Boa tarde, ${nome}! <Br>São ${hora} horas e ${minutos}minutos`
+    res.innerHTML =`Boa tarde, ${nome}! <Br>Seja Bem-vindo(a)`
 } else {
-    res.innerHTML = `Boa noite, ${nome}!<br>São ${hora}horas e ${minutos}minutos`
+    res.innerHTML = `Boa noite, ${nome}!<br>Seja Bem-vindo(a)`
 }
-
+}
     function clickmenu() {
         if (items.style.display== "block") {
          items.style.display = "none"
@@ -29,4 +29,4 @@ else if (hora >= 12 && hora <19){
              items.style.display = "none"
          }
      }
-    }
+    
