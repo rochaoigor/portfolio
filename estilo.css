@@ -53,6 +53,17 @@ header {
 #navitems {
     display:block;
 }
+
+#hello {
+    font-weight: normal;
+    padding-top: 90px;
+    text-align: center;
+    text-shadow: 3px 2px black;
+    font-size: 2.5em;
+    font-family: var(--fonte03);
+    font-variant: small-caps;
+    color: white;
+}
 header h1 {
     text-align: center;
     font-size: 4vw;
