@@ -104,7 +104,7 @@ header ul li a:hover:after {
 
 section {
     min-height: 70vw;
-    background-image: url("img/wallpaper02.jpg");
+    background-image: url("img/background-site.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
