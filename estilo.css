@@ -109,6 +109,7 @@ header h1 {
 
 .about-me p {
     font-family:var(--fonte03);
+    letter-spacing:5px;
     font-size:1.3rem;
     text-align:center;
     padding-top:15px;
@@ -164,14 +165,17 @@ header h1 {
     font-size:2rem;
     color:white;
     font-family:var(--fonte03);
+    text-transform:uppercase;
+    letter-spacing:3px;
     text-align:center;
     padding:25px;
 }
 
 .projects-exercises p {
-    font-size:1.7rem;
+    font-size:1.4rem;
     color:white;
-    font-family:var(--fonte01);
+    font-family:var(--fonte02);
+    font-weight:bold;
     text-align:center;
     padding:10px;
     margin-bottom:20px;
@@ -236,6 +240,7 @@ header h1 {
   footer p {
     text-align:center;
     font-size:1.2rem;
+    letter-spacing:3px;
     background-color:black;
     color:white;
     font-family:var(--fonte03);
@@ -243,6 +248,8 @@ header h1 {
   }
 
 footer h2 {
+    text-transform:uppercase;
+    letter-spacing:2px;
     text-align:center;
     font-family:var(--fonte02);
     margin-top:25px;
