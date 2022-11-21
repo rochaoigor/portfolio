@@ -131,7 +131,7 @@ header h1 {
 }
 .carousel-container {
     position:relative;
-    max-width:900px;
+    max-width:992px;
     padding:15px;
     margin:0 auto;
 }
