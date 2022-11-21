@@ -4,9 +4,15 @@ const items = document.querySelectorAll('.item');
 const maxItems = items.length;
 const menuItems = document.querySelectorAll('.nav-bar a[href^="#"]')
 
+
 menuItems.forEach(item => {
     item.addEventListener('click', smoothScroll)
 });
+
+
+function manAtWork () {
+    alert('Site em processo de atualização')
+}
 
 function smoothScroll(event) {
     event.preventDefault();
@@ -55,9 +61,11 @@ control.forEach(control => {
     
 });
 };
+
 function init() {
     caroussel();
     smoothScroll();
+    manAtWork();
 };
 
 init();
