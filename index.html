@@ -5,71 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="assets/script.js" defer></script>
     <title>Meu Portfólio</title>
 </head>
 
-<body>
-    <header>
-        <div class="navbar">
-            <h1>Bem-vindos</h1>
-            <p>Este é o meu portfólio.</p>
-            <span id="menu" class="material-symbols-outlined">
-                menu
-                </span>
-                <nav id="items">
+<body>         
+
+</nav>
+       <header>
+        <nav class="nav-bar">
             <ul>
-                <li><a href="#home">Intro</a></li>
-                <li><a href="#proj">Projetos</a></li>
-                <li><a href="#contato">Contatos</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-    <section class="main-content" id="home">
-       
-            <div id="hello"></div>
-            <div class="container">
-                <img src="img/img-semfundo.png" class="conteudo" alt="Uma imagem do meu rosto">
-            </div>
-            <p>Meu nome é <strong>Igor Dos Santos Rocha</strong>
-                tenho 27 anos, residente da cidade de <a
-                    href="https://pt.wikipedia.org/wiki/Valença_(Rio_de_Janeiro)" target="_blank">Valença/RJ.</a>
-                Criei esse portfólio para trocar conhecimentos e ter maior visibilidade ao mercado de trabalho.
-            
-            <pre><q>HTML5/CSS3/JAVASCRIPT</q></pre>  
-            </p>      
+            <li><a href="#contato">Contatos</a></li>
+            <li><a href="#proj">Projetos</a></li>
+            <li><a href="#home">Intro</a></li>
+             </ul>
+            <h1>Portfólio</h1>
+        </header>
+    <section class="about-me" id="home">
+           <h2>Sobre mim</h2>
+           <figure>
+            <img src="img/img-semfundo.png" alt="Uma imagem de @imrochaigor">
+        </figure>
+           <article>
+            <p>Meu nome é Igor Dos Santos Rocha, tenho 27 anos, residente da cidade de Valença-Rj.</p>
+            <p>Estou em busca do meu espaço na área do Desenvolvimento Front-End. E neste portfólio irei postar toda minha evolução como Desenvolvedor, desde de exercício à futuro projetos.</p>
+           </article>
     </section>
-    <section class="white-bg" id="proj">
-        
+    <section class="projects-exercises" id="proj">
+        <!--Alguns desses projetos vão passar por revisão de código, conforme meus estudos vão avançando-->
             <h2>Projetos</h2>
-            <p>Area reservada para projetos e exercicios:</p>
-            <div class="projetos">
-                <ul>
-                    <li><a href="https://rochaoigor.github.io/projeto-cordel/" target="_blank">Projeto-Cordel (CURSOEMVIDEO)</a></li>
-                    <li><a href="https://rochaoigor.github.io/projeto-astronauta/" target="_blank">Projeto-Astronauta(CURSOEMVIDEO)</a></li>
-                   <li> <a href="https://rochaoigor.github.io/calculadora/"target="_blank">Calculadora</a></li>
-                   <li><a href="https://rochaoigor.github.io/tabela-imc/" target="_blank">Tabela IMC</a></li>
-                   <li><a href="https://rochaoigor.github.io/tela-de-login/" target="_blank">Tela de Login</a></li>
-                   <li><a href="https://rochaoigor.github.io/verificadoridade/" target="_blank">Verificador de Idade</a></li>
-                </ul>
+            <p>Sessão para divulgação de projetos e exercícios.</p>
+            <div class="carousel-container">
+            <button class="arrow-left control" aria-label="Previous Image">&#8592</button>
+            <button class="arrow-right control" aria-label="Next Image">&#8594</button>
+            <div class="flex-container-wrapper">
+                <div class="flex-container">
+                  <figure>
+                    <a href="https://rochaoigor.github.io/Basquiat/" title="Link para página 'Jean Michel Basquiat'" target="_blank">
+                    <img src="img/basquiat.jpg" alt="Uma das artes de 'Jean Michel Basquiat'" class="item">
+                </a>
+                    <figcaption>
+                    <sub>
+                        <p>Site - Basquiat.</p>
+                        <p>Exercitando Bootstrap + JavaScript</p>
+                    </sub>
+                    </figcaption>
+                </figure>
+                  <figure>
+                    <a href="https://rochaoigor.github.io/tabela-imc/" title="Link para página Calculadora de IMC" target="_blank"><img src="img/tabela-imc.jpg" alt="Imagem representando uma calculadora de IMC" class="item"></a>
+                    <figcaption>
+                        <sub>
+                          <p>Site - Tabela de IMC</p>  
+                            <p>Exercitando JavaScript</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                  <figure>
+                    <a href="https://rochaoigor.github.io/FrontWeek" title="Link para site'Suits - FrontWeek - Hora de Codar'' " target="_blank">
+                    <img src="img/suits-front-week.jpg" alt="Imagem da serie 'Suits' "class="item">
+                </a>
+                    <figcaption>
+                        <sub>
+                            <p>Site do Desafio Hora de Codar (FrontWeek)</p>
+                            <p>HTML5 + CSSS3 + JavaScript </p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                  <figure>
+                    <a href="https://rochaoigor.github.io/tela-de-login/" title="Link para Site de Tela de Login" target="_blank"><img src="img/tela-de-login.png" alt="imagem representando uma tela de login" class="item"></a>
+                    <figcaption>
+                        <sub>
+                            <p>Site - Tela de Login</p>
+                            <p>Exercitando Media Queries</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                  <figure>
+                    <img src="img/timer.jpg" alt="imagem para representar um cronometro" class="item">
+                    <figcaption>
+                        <sub>
+                            <p>Timer</p>
+                            <p>Exercitando JavaScript</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                  <figure>
+                    <a href="https://rochaoigor.github.io/verificador-idade/" title="Link para site 'Verificador de Idade'" target="_blank"><img src="img/verificador-idade.jpg" alt="imagem para representar 'Infancia', 'Adolescencia' e '3ª idade'" class="item"></a>
+                    <figcaption>
+                        <sub>
+                            <p>Site - Verificador de Idade</p>
+                            <p>Exercitando JavaScript</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/calculadora.jpg" class="item" alt="imagem representando uma calculadora">
+                    <figcaption>
+                        <sub>
+                            <p>Calculadora</p>
+                            <p>Treinando Funções JavaScript</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="https://rochaoigor.github.io/meme-maker/" title="Link para Site 'Gerador de Memes'"target="_blank"><img src="img/meme.jpg" class="item" alt="imagem representando site Meme-Maker"></a>
+                    <figcaption>
+                        <sub>
+                            <p>Site - Gerador de Memes</p>
+                            <p>HTML5/CSS3/JavaScript</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/lista-tarefas.jpg" alt="Imagem representando uma marcação de tarefa finalizada" class="item" onclick="atencao()">
+                    <figcaption>
+                        <sub>
+                            <p>Site - Lista de Tarefas</p>
+                            <p>Exercício de JavaScript</p>
+                        </sub>
+                    </figcaption>
+                </figure>
+                </div>
             </div>
-        
-        
+            </div> 
     </section>
-    <section class="main-content" id="contato">
-        <h2 id="titulo-socialmedia">Contatos:</h2>
+    <footer id="contato">
+        <div class="container">
+            <a href="https://www.instagram.com/imrochaigor/"><i class="bi-instagram" title="link para o meu instagram"></i></a>
+            <a href="https://www.facebook.com/niaggrocha/" title="link para meu facebook"><i class="bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/igor-rocha-354874247/" title="link para meu linkedin"><i class="bi-linkedin"></i></a>
+        </div>
         
-            <div class="socialmedia-content">
-         <a href="https://www.linkedin.com/in/igor-rocha-354874247/"target="_blank"><img src="img/linkdin.png" alt="Meu perfil no Linkedin"></a>
-         <a href="https://www.facebook.com/niaggrocha"target="_blank"><img src="img/facebuk.png" alt="Meu perfil no Facebook"></a>
-         <a href="https://github.com/rochaoigor"target="_blank"><img src="img/github2.png" alt="Meu perfil no Github"></a>
-       
-         
-         </div>
-    </section>
-    <footer>Entre em contato pelo <a href="https://wa.me/5524981314965">WhatsApp</a><footer>
-    <script src="assets/script.js"></script>
+        <p>Todos os Direitos Reservados ©</p>
+        <footer>
 </body>
 </HTML>
