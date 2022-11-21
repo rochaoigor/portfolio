@@ -2,6 +2,7 @@ const control = document.querySelectorAll('.control');
 let currentItem = 0;
 const items = document.querySelectorAll('.item');
 const maxItems = items.length;
+const desktopLinks = document.querySelectorAll('#navbar a');
 
 control.forEach(control => {
     control.addEventListener('click', () => {
@@ -30,10 +31,30 @@ control.forEach(control => {
         
     })
     
-})
+});
 
 
-function atencao() {
-    alert('Tarefa em processo de Atualização')
-}
+function smoothScroll(e) {
+    e.preventDefault()
+    const href = this.getAttribute('href');
+    const offsetTop = document.querySelector(href).offsetTop;
+    
+    scroll({
+        top:offsetTop,
+        behavior:"smooth",
+    })
 
+   
+    };
+
+    function notification() {
+        alert('Página em processo de atualização')
+    }
+
+    function init() {
+        smoothScroll()
+    }
+    desktopLinks.forEach((links) => {
+        links.addEventListener('click', smoothScroll)
+        })
+    smoothScroll();
