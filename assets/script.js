@@ -57,4 +57,5 @@ function smoothScroll(e) {
     desktopLinks.forEach((links) => {
         links.addEventListener('click', smoothScroll)
         })
-    smoothScroll();
+
+    init();
