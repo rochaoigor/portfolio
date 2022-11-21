@@ -1,32 +1,39 @@
-function carregar() {
+const control = document.querySelectorAll('.control');
+let currentItem = 0;
+const items = document.querySelectorAll('.item');
+const maxItems = items.length;
 
-let nome=prompt('Qual o seu nome?')
-let data = new Date()
-let hora = data.getHours()
-let minutos = data.getMinutes()
-let res = document.querySelector('#hello')
-if (hora >=0 && hora <12 ) 
-{
-res.innerHTML = `Bom dia, ${nome}! <Br>Seja Bem-vindo(a)`}
-else if (hora >= 12 && hora <19){
-    res.innerHTML =`Boa tarde, ${nome}! <Br>Seja Bem-vindo(a)`
-} else {
-    res.innerHTML = `Boa noite, ${nome}!<br>Seja Bem-vindo(a)`
-}
-}
-    function clickmenu() {
-        if (items.style.display== "block") {
-         items.style.display = "none"
+control.forEach(control => {
+    control.addEventListener('click', () => {
+        const isLeft = control.classList.contains('arrow-left');
+      
+        if(isLeft) {
+            currentItem -= 1;
+        }else {
+            currentItem += 1;
         }
-        else {
-         items.style.display = "block"
+        if (currentItem >= maxItems) {
+            currentItem = 0;
         }
-     }
-     function tamanho() {
-         if (window.innerwidth >= 768) {
-             items.style.display = "block"
-         }else {
-             items.style.display = "none"
-         }
-     }
+        if(currentItem < 0) {
+            currentItem = maxItems - 1
+        };
+        items.forEach(item =>
+            item.classList.remove('current-item'));
     
+       items[currentItem].scrollIntoView({
+           inline:"center",
+           behavior:"smooth",
+           block: "nearest"
+       });
+       items[currentItem].classList.add('current-item')
+        
+    })
+    
+})
+
+
+function atencao() {
+    alert('Tarefa em processo de Atualização')
+}
+
