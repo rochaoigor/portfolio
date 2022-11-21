@@ -6,24 +6,24 @@ const menuItems = document.querySelectorAll('.nav-bar a[href^="#"]')
 
 menuItems.forEach(item => {
     item.addEventListener('click', smoothScroll)
-})
+});
 
 function smoothScroll(event) {
     event.preventDefault();
     const goTo = getScrollTopByHref(event.target);
     
   scrollToPosition(goTo)
-}
+};
 function scrollToPosition(goTo) {
     window.scroll({
         top:goTo,
         behavior:"smooth",
     })
-}
+};
 function getScrollTopByHref(element) {
     const id = element.getAttribute('href');
     return document.querySelector(id).offsetTop
-}
+};
 
 function  caroussel() {
 control.forEach(control => {
@@ -54,10 +54,10 @@ control.forEach(control => {
     })
     
 });
-}
+};
 function init() {
     caroussel();
     smoothScroll();
-}
+};
 
 init();
