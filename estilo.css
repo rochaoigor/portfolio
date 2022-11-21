@@ -97,10 +97,11 @@ header h1 {
 }
 
 .about-me h2 {
+    text-decoration:underline;
+    letter-spacing:3px;
     font-family:var(--fonte02);
     font-size:2rem;
-    text-decoration:underline;
-    padding:5px;
+    padding:8px;
     margin-top:10px;
     margin-bottom:10px;
 
