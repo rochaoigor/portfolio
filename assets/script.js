@@ -2,8 +2,30 @@ const control = document.querySelectorAll('.control');
 let currentItem = 0;
 const items = document.querySelectorAll('.item');
 const maxItems = items.length;
-const desktopLinks = document.querySelectorAll('#navbar a');
+const menuItems = document.querySelectorAll('.nav-bar a[href^="#"]')
 
+menuItems.forEach(item => {
+    item.addEventListener('click', smoothScroll)
+})
+
+function smoothScroll(event) {
+    event.preventDefault();
+    const goTo = getScrollTopByHref(event.target);
+    
+  scrollToPosition(goTo)
+}
+function scrollToPosition(goTo) {
+    window.scroll({
+        top:goTo,
+        behavior:"smooth",
+    })
+}
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop
+}
+
+function  caroussel() {
 control.forEach(control => {
     control.addEventListener('click', () => {
         const isLeft = control.classList.contains('arrow-left');
@@ -32,30 +54,10 @@ control.forEach(control => {
     })
     
 });
+}
+function init() {
+    caroussel();
+    smoothScroll();
+}
 
-
-function smoothScroll(e) {
-    e.preventDefault()
-    const href = this.getAttribute('href');
-    const offsetTop = document.querySelector(href).offsetTop;
-    
-    scroll({
-        top:offsetTop,
-        behavior:"smooth",
-    })
-
-   
-    };
-
-    function notification() {
-        alert('Página em processo de atualização')
-    }
-
-    function init() {
-        smoothScroll()
-    }
-    desktopLinks.forEach((links) => {
-        links.addEventListener('click', smoothScroll)
-        })
-
-    init();
+init();

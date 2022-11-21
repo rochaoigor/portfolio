@@ -239,6 +239,7 @@ header h1 {
     background-color:black;
     color:white;
     font-family:var(--fonte03);
+    padding:15px;
   }
 
 footer h2 {
