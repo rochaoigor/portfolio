@@ -122,7 +122,7 @@ header h1 {
     padding-left:30px;
     line-height:1cm;
     letter-spacing:1px;
-    margin-bottom:20px;
+    padding-bottom:20px;
 }
 
 .projects-exercises {
@@ -251,6 +251,7 @@ header h1 {
     color:white;
     font-family:var(--fonte03);
     padding:15px;
+    margin:0;
   }
 
 footer h2 {
@@ -274,6 +275,20 @@ footer h2 {
     box-shadow:1px 1px 2px #888;
 
     z-index:1000;
+}
+whatsapp-link {
+    position: fixed;
+    width: 68px;
+    height: 67px;
+    bottom: 40px;
+    right: 0px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 43px;
+    text-align: center;
+    font-size: 43px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
 }
 
 .bi-whatsapp {
