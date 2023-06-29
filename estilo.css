@@ -17,6 +17,8 @@
     --fonte03: 'Oranienbaum', serif;
 }
 
+
+
 .nav-bar {
     
     font-size:1.2rem;
@@ -84,7 +86,7 @@ header h1 {
     padding:32.5px;
     color:#fff;
     letter-spacing:3px;
-    font-weight:bold;
+   
 }
 
 .about-me {
@@ -92,7 +94,8 @@ header h1 {
    flex-direction:column;
    justify-content:center;
    align-items:center;
-   background-color:snow;
+   background-color:azure;
+  
    
 }
 
@@ -102,8 +105,8 @@ header h1 {
     font-family:var(--fonte02);
     font-size:2rem;
     padding:8px;
-    margin-top:10px;
-    margin-bottom:10px;
+    padding-top:10px;
+    padding-bottom:10px;
 
 }
 
@@ -176,10 +179,8 @@ header h1 {
     font-size:1.4rem;
     color:white;
     font-family:var(--fonte02);
-    font-weight:bold;
     text-align:center;
     padding:10px;
-    margin-bottom:20px;
 }
 
 .carousel-container p {
@@ -238,6 +239,10 @@ header h1 {
     font-size:2rem;
   }
 
+  footer {
+    background-color:azure;
+  }
+
   footer p {
     text-align:center;
     font-size:1.2rem;
@@ -253,7 +258,7 @@ footer h2 {
     letter-spacing:2px;
     text-align:center;
     font-family:var(--fonte02);
-    margin-top:25px;
+    padding-top:25px;
 }
 .whatsapp-link {
     position:fixed;
