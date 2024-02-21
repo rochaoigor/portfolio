@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing:border-box;
+    max-width:100vw;
    
 }
 
@@ -83,15 +84,12 @@ header h1 {
     text-align:center;
     font-family:var(--fonte02);
     text-transform:uppercase;
-    padding:32.5px;
+    padding-top:30px;
     color:#fff;
     letter-spacing:3px;
    
 }
-.avatar {
-    width:500px;
-    height:500px;
-}
+
 .about-me {
     display:flex;
     flex-direction:column;
