@@ -116,15 +116,14 @@ header h1 {
 
 .about-me p {
     font-family:var(--fonte03);
-    letter-spacing:5px;
+    letter-spacing:1px;
     font-size:1.3rem;
     text-align:center;
     padding-top:15px;
     padding-bottom:5px;
-    padding-right:30px;
-    padding-left:30px;
+    padding-right:15px;
+    padding-left:15px;
     line-height:0.1cm;
-    letter-spacing:1px;
     padding-bottom:20px;
 }
 
