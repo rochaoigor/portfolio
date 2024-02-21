@@ -149,7 +149,7 @@ header h1 {
     border:none;
     cursor:pointer;
     background:linear-gradient(to left, transparent 0%, black 200%);
-    opacity:0.1;
+    opacity:0.3;
     transition:all 600ms ease-in-out;
 }
 .arrow-right {

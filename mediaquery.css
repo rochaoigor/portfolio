@@ -1,15 +1,7 @@
 @media screen and (max-width:768px) {
 
 
-    #container {
-        display:block;
-        width:80vw;
-    }
-    div.projetos {
-        display:grid;
-        grid-template: repeat(2,0.5fr);
-        font-size:0.9em;
-    }
+
     .socialmedia-content img {
         display:grid;
         grid-template-columns: 0.5fr;
