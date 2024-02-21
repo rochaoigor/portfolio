@@ -93,15 +93,15 @@ header h1 {
     height:500px;
 }
 .about-me {
-   display:flex;
-   flex-direction:column;
-   justify-content:center;
-   align-items:center;
-   background-color:azure;
-  
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:azure;
    
-}
-
+    
+ }
+ 
 .about-me h2 {
     text-decoration:underline;
     letter-spacing:3px;
@@ -116,14 +116,11 @@ header h1 {
 
 .about-me p {
     font-family:var(--fonte03);
-    letter-spacing:1px;
     font-size:1.3rem;
     text-align:center;
     padding-top:15px;
-    padding-bottom:5px;
     padding-right:15px;
     padding-left:15px;
-    line-height:0.1cm;
     padding-bottom:20px;
 }
 
