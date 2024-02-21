@@ -1,6 +1,14 @@
 @media screen and (max-width:768px) {
 
+    .flex-container {
+        max-width:100%;
+        
+        padding-top:80px;
+    }
 
+    .projects-exercises  h2 {
+        font-size:1.5rem;
+    }
 
     .socialmedia-content img {
         display:grid;
@@ -40,5 +48,22 @@ nav#items ul li a {
   }
 
   
- 
+ footer p {
+    font-size:0.8rem;
+ }
+
+ .about-me h2 {
+    font-size:1.5rem;
+ }
+.about-me p {
+    font-size:0.825rem;
+}
+ .item {
+    width:150px;
+    height:150px
+ }
+
+ .projects-exercises p  {
+    font-size:0.750rem;
+ }
 }
